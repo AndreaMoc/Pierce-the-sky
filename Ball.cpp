@@ -63,7 +63,7 @@ void Ball::handleInput(std::string input)
 		_velY = -200;
 	}
 }
-/*
+
 bool Ball::isCollidingWith(Collideable* object)
 {
 	// returns false if either one of the two Collideables is not enabled
@@ -125,4 +125,3 @@ void Ball::checkCollisionSide(Collideable* object)
 		_velY = -_velY;
 	}
 }
-*/

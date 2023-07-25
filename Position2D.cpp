@@ -11,7 +11,10 @@ Position2D::Position2D(double x, double y) {
 }
 
 // Returns _x
-double Position2D::getX() { return _x; }
+double Position2D::getX()
+{
+	return _x;
+}
 // Returns _y
 double Position2D::getY() { return _y; }
 

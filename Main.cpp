@@ -46,14 +46,14 @@ int main() {
 	lowerWall->setPosition(0, SCREEN_HEIGHT);
 	lowerWall->setWidth(100);
 	// Blocks
-	Block* blockCollection[48]{};
+	Block* blockCollection[16]{};
 	Position2D* blockSpawnPosition = new Position2D(50, SCREEN_HEIGHT / 2);
 
 
 	int offset = 10;
 	int j = 0;
 
-	for (int i = 0; i < 48; ++i)
+	for (int i = 0; i < 16; ++i)
 	{
 		if (i < 16)
 		{
@@ -69,7 +69,6 @@ int main() {
 			block1->setPosition(blockSpawnPosition->getX() + (i % 8) * blockSpawnPosition->getX(), blockSpawnPosition->getY() + column * 2 * block1->getHeight());
 
 			blockCollection[i] = block1;
-			delete block1;
 		}
 	}
 

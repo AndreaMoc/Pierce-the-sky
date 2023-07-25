@@ -16,11 +16,11 @@ public:
 	void handleInput(std::string input) override;
 
 	// Overrides to enable call to method for colliding side detection
-	//bool isCollidingWith(Collideable* object) override;
+	bool isCollidingWith(Collideable* object) override;
 
 private:
 	// Colliding side detection method
-	//void checkCollisionSide(Collideable* object);
+	void checkCollisionSide(Collideable* object);
 
 	// internal value to avoid multiple collision methods being called multiple times during the same collision
 	bool _hasCollided;

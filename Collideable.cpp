@@ -16,7 +16,7 @@ Collideable::Collideable(std::string filePath) : Drawable(filePath)
 bool Collideable::isCollidingWith(Collideable* object)
 {
 	// returns false if either one of the two Collideables is not enabled
-	if (_collisionEnabled == false || object->isCollisionEnabled() == false) return false;
+	if (!_collisionEnabled || !object->isCollisionEnabled()) return false;
 
 	// checks for overlap on the X axis
 	bool collisionX = (_position->getX() + _width >= object->getPosition()->getX()) &&
