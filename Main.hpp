@@ -43,7 +43,7 @@ bool initializeSDL() {
     // windowFlags |= SDL_WindowFlags::SDL_WINDOW_BORDERLESS;
 
     // Create window
-    globalWindow = SDL_CreateWindow("MGD Window", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, windowFlags);
+    globalWindow = SDL_CreateWindow("Pierce the Sky", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, windowFlags);
     if (globalWindow == NULL) {
         printf("Window could not be created! SDL Error: %s\n", SDL_GetError());
         return false;
