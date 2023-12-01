@@ -9,3 +9,5 @@ create a functioning game based on a simplified version of the famous arcade gam
 No memory leaks <br />
 No STL containers (like std::vector, std::list, std::map, etc) <br />
 No "using" <br />
+
+<img width="375" alt="image" src="https://github.com/AndreaMoc/Pierce-the-sky/assets/40268845/b29fc43d-b5b9-48fa-a4ce-d9c0252c82cc">
